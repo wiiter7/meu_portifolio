@@ -1,0 +1,14 @@
+:root {
+    --cor-principal:#6e859f;
+    --cor--secundario:#284260;
+    --cor--destaque:#c92bfc;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+h1,h2,h5 {
+    color: var(--cor--secundario);
+    font-weight: 700;
+}
