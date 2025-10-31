@@ -10,6 +10,9 @@
 
 <body>
    <header class="container text-center">
+    <div class="dark-mode">
+     <button id="dark-mode-toggle" class="dark-mode-btn">Modo escuro</button>
+   </div>
     <img src="avatar.png" alt="avatar" class="rounded-circle" width="150" height="150">
     <p class="lead">Eu sou Arthur Benicio</p>
     <h1>Eu sou aluno de programação</h1>
@@ -296,5 +299,19 @@
         <p class="my-5 text-center">Produzido por &copy;Arthur Benicio - 2B</p>
    </footer>
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+   <script>
+    const toggleButon = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+
+    toggleButon.addEventListener('click', function() {
+      body.classList.toggle('dark-mode');
+
+      if(body.classList.contains('dark-mode')) {
+        toggleButon.textContent = 'Modo claro';
+      }else {
+        toggleButon.textContent = 'Modo escuro';
+      }
+    });
+   </script>
 </body>
 </html>
